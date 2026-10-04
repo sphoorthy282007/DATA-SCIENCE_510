@@ -1,0 +1,19 @@
+# Secrets - never commit these
+.env
+.streamlit/secrets.toml
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Large/generated data (optional - remove these two lines if you want
+# your datasets tracked in the repo instead of git-ignored)
+data/raw/*.xlsx
+*.zip

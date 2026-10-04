@@ -1,0 +1,14 @@
+services:
+  retailiq:
+    build: .
+    container_name: retailiq
+    ports:
+      - "8501:8501"
+    environment:
+      # Optional: put your free Gemini API key in a local .env file
+      # (see .env.example) to enable the AI-powered Assistant mode.
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      # Lets you drop new datasets into data/raw without rebuilding the image
+      - ./data:/app/data
+    restart: unless-stopped

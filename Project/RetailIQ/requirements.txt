@@ -1,0 +1,17 @@
+# Core
+pandas
+numpy
+
+# Machine learning
+scikit-learn
+
+# Dashboard
+streamlit>=1.24  # st.chat_input/st.chat_message used by the Assistant page
+plotly
+
+# Data I/O
+openpyxl
+
+# AI Assistant (optional - falls back to rule-based chatbot if unused)
+google-genai
+python-dotenv
